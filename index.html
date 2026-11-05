@@ -340,4 +340,5 @@ function tab(t) { if (!TABS.includes(t)) t = 'stream';
   CB.$$('.tabs [data-tab]').forEach(b => b.classList.toggle('on', b.dataset.tab === t)); CB.save('tab', t); if (location.hash !== '#' + t) history.replaceState(null, '', '#' + t); }
 CB.$$('.tabs [data-tab]').forEach(b => b.onclick = () => tab(b.dataset.tab));
 tab((location.hash || '').slice(1) || CB.load('tab', 'stream'));
-</script></body></html>
+</script><section class="coffee-tip" style="margin:16px 0;padding:14px;background:#fff0f7;border:2px solid #ffb3d1;border-radius:16px;text-align:center"><h2 style="color:#d6336c;margin:0 0 6px">Buy Karen a coffee tip</h2><p style="margin:0">Free for now. Tip via PayID (Teachers Mutual Bank): <strong>darkokaz@gmx.com</strong></p></section>
+</body></html>
